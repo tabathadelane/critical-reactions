@@ -4,7 +4,7 @@ class Party(models.Model):
     title = models.CharField(null=True, blank=True, default="", max_length=100)
     who = models.TextField(null=True, blank=True, default="", max_length=300)
     what = models.TextField(null=True, blank=True, default="", max_length=300)
-    why = models.TextField(null=True, blank=True, default="", max_length=300)
+    why = models.TextField(null=True, blank=True, default="", max_length=500)
 
     def __str__(self):
         return self.title
