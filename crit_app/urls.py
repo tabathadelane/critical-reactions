@@ -3,5 +3,6 @@ from . import views
 
 app_name = 'crit_app' # for namespacing
 urlpatterns = [
-    path('', views.<viewname>, name='<viewname>')
+    path('party/', views.MemberList.as_view()),
+    path('party/<int:pk>/', views.MemberDetail.as_view()),
 ]
