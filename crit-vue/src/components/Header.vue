@@ -1,6 +1,6 @@
 <template>
   <div class="hello" style="color: seagreen; font-size: 24px;">
-    <h1><i class="fad fa-dice-d20"></i> {{ msg }}</h1>
+    <h1><i class="fad fa-dice-d20"></i> {{ party }}</h1>
     
   </div>
 </template>
@@ -9,7 +9,7 @@
 export default {
   name: 'Header',
   props: {
-    msg: String
+    party: String
   }
 }
 </script>

@@ -5,41 +5,32 @@
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lato|Macondo+Swash+Caps&display=swap" rel="stylesheet">
       <title>Critical Reactions</title>
     </head>
-    <Header msg="Critical Reactions"/>
-    <Members :members="members"/>
+    <Landing :party="party.title"/>
+    <Header :party="party.title"/>
+    <Party :party="party"/>
+    <Members :members="party.m"/>
     
   </div>
 </template>
 
 <script>
+import Landing from './components/Landing.vue'
 import Header from './components/Header.vue'
+import Party from './components/Party.vue'
 import Members from './components/Members.vue'
 
-// function getCookie(name) {
-//   var cookieValue = null;
-//   if (document.cookie && document.cookie !== "") {
-//     var cookies = document.cookie.split(";");
-//     for (var i = 0; i < cookies.length; i++) {
-//       var cookie = cookies[i].trim();
-//       // Does this cookie string begin with the name we want?
-//       if (cookie.substring(0, name.length + 1) === name + "=") {
-//         cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-//         break;
-//       }
-//     }
-//   }
-//   return cookieValue;
-// }
 
 export default {
   name: 'App',
   components: {
+    Landing,
     Header,
+    Party,
     Members
   },
   data() {
     return {
-      members: []
+      party: Object
     };
   },
   mounted() {
@@ -49,9 +40,9 @@ export default {
   methods: {
     async getMembers() {
       // try {
-      const response = await fetch("http://127.0.0.1:8000/api/members/");
+      const response = await fetch("http://127.0.0.1:8000/api/party/1/");
       const data = await response.json();
-      this.members = data;
+      this.party = data;
       // } catch (error) {}
     },
   },
@@ -66,11 +57,12 @@ font-family: 'Macondo Swash Caps', cursive;
 font-family: 'Lato', sans-serif; 
 */
 
-
+body{
+  margin:0;
+}
 #app {
   font-family: 'Lato', sans-serif; 
   text-align: center;
   color: #2c3e50;
-  margin-top: 100px;
 }
 </style>

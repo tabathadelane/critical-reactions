@@ -13,7 +13,7 @@ class Party(models.Model):
 
 
 class Member(models.Model):
-    party = models.ForeignKey('Party', related_name='p', on_delete=models.CASCADE)
+    party = models.ForeignKey('Party', related_name='m', on_delete=models.CASCADE)
     name = models.CharField(null=True, blank=True, default="", max_length=100)
     race = models.CharField(null=True, blank=True, default="", max_length=100)
     dndclass = models.CharField(null=True, blank=True, default="", max_length=100)
