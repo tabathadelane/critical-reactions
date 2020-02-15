@@ -9,4 +9,4 @@ class PartySerializer(serializers.ModelSerializer):
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Member
-        fields = ('pk', 'party', 'name', 'race', 'dndclass', 'specialty', 'title', 'interests', 'bio',  )
+        fields = ('pk', 'party', 'name', 'race', 'dndclass', 'icon', 'theme', 'specialty', 'title', 'interests', 'bio',  )

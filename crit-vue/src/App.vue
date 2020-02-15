@@ -2,23 +2,17 @@
   <div id="app">
     <head>
       <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lato|Macondo+Swash+Caps&display=swap" rel="stylesheet">
+      <title>Critical Reactions</title>
     </head>
-    <div style="font-size: 24px;">
-      <!-- <i class="fad fa-dice-d20" style="color: purple;"></i> -->
-      <i class="fad fa-dice-d20 fa-10x" style="color: seagreen;"></i>
-      <!-- <i class="fas fa-exclamation fa-sm fa-stack-1x"></i> -->
-      <!-- <i class="fad fa-moon-cloud fa-10x fa-swap-opacity" style="--fa-secondary-color: wheat;"></i> -->
-    </div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HelloWorld msg="Critical Reactions Coming Soon"/>
+    <Header msg="Critical Reactions"/>
     <Members :members="members"/>
     
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
 import Members from './components/Members.vue'
 
 // function getCookie(name) {
@@ -40,7 +34,7 @@ import Members from './components/Members.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Header,
     Members
   },
   data() {
@@ -55,12 +49,7 @@ export default {
   methods: {
     async getMembers() {
       // try {
-      const response = await fetch("http://127.0.0.1:8000/api/members/",{
-        method: "GET",
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        }
-      });
+      const response = await fetch("http://127.0.0.1:8000/api/members/");
       const data = await response.json();
       this.members = data;
       // } catch (error) {}
@@ -70,8 +59,16 @@ export default {
 </script>
 
 <style>
+
+/* 
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Macondo Swash Caps', cursive;
+font-family: 'Lato', sans-serif; 
+*/
+
+
 #app {
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Lato', sans-serif; 
   text-align: center;
   color: #2c3e50;
   margin-top: 100px;
