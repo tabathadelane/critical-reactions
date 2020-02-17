@@ -1,6 +1,6 @@
 <template>
   <div class="members">
-    <div  class="m" v-for="m in members" :key="m.pk" >
+    <div  class="m" v-for="m in party.m" :key="m.pk" >
       <div class="m-box" :id="''+m.theme+''" :style="'border-color: '+m.theme+';' ">
         <h1 style="font-size: 32px;"><i :class="'fad ' + m.icon" :style="'color: '+m.theme+';'"></i> {{m.name}}</h1>
         <hr>
@@ -19,7 +19,7 @@
 export default {
   name: 'Members',
   props: {
-    members: Array
+    party: Array
   }
 }
 </script>

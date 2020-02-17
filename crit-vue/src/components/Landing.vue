@@ -1,6 +1,6 @@
 <template>
   <div class="hello" style="font-size: 48px;">
-    <h1><i class="fad fa-dice-d20"></i> {{ party }}</h1>
+    <h1><i class="fad fa-dice-d20"></i> {{ party.title }}</h1>
     
   </div>
 </template>
@@ -28,11 +28,11 @@ h1 {
 }
 .hello {
   background-color: #212324;
-  background-image: url('~@/assets/waterdeep-night.png');
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  /* background-image: url('~@/assets/waterdeep-night.png'); */
+  /* background-position: bottom center; */
+  /* background-repeat: no-repeat; */
   background-size: 60vw;
   margin: auto;
-  height: 95vh;
+  height: 100vh;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="members">
+  <div class="party">
     <div class="p-box" >
       <p class="who">{{party.who}}</p>
       <p class="what">{{party.what}}</p>
@@ -19,18 +19,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.party{
+  height: 100vh;
+
+}
 h1 {
   font-family: 'Macondo Swash Caps', cursive;
 }
 
-.m {
-  width: 40%;
+.p-box {
   margin: auto;
-}
-.m-box {
-  border: 5px solid;
-  border-radius: 5px;
-  margin: 10px;
+  width: 60vw;
+
   
 }
 </style>

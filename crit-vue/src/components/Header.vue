@@ -1,6 +1,6 @@
 <template>
   <div class="hello" style="color: seagreen; font-size: 24px;">
-    <h1><i class="fad fa-dice-d20"></i> {{ party }}</h1>
+    <h1><i class="fad fa-dice-d20"></i> {{ party.title }}</h1>
     
   </div>
 </template>

@@ -5,10 +5,20 @@
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lato|Macondo+Swash+Caps&display=swap" rel="stylesheet">
       <title>Critical Reactions</title>
     </head>
-    <Landing :party="party.title"/>
-    <Header :party="party.title"/>
-    <Party :party="party"/>
-    <Members :members="party.m"/>
+    <div>
+      <button v-for="tab in tabs" :key="tab" @click="selected = tab;">
+        {{ tab }}
+      </button>
+
+      <component :party="party" :is="selected"></component>
+    </div>
+    <!-- <div  >
+
+      <Landing :party="party.title"/>
+      <Header :party="party.title"/>
+      <Party :party="party"/>
+      <Members :members="party.m"/>
+    </div> -->
     
   </div>
 </template>
@@ -30,7 +40,9 @@ export default {
   },
   data() {
     return {
-      party: Object
+      party: Object,
+      tabs: ["Landing", "Header", "Party", "Members",],
+      selected: "Landing"
     };
   },
   mounted() {
