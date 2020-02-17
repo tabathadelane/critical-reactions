@@ -6,6 +6,7 @@
       <title>Critical Reactions</title>
     </head>
     <div>
+      <Header :party="party"/>
       <button v-for="tab in tabs" :key="tab" @click="selected = tab;">
         {{ tab }}
       </button>
@@ -15,7 +16,6 @@
     <!-- <div  >
 
       <Landing :party="party.title"/>
-      <Header :party="party.title"/>
       <Party :party="party"/>
       <Members :members="party.m"/>
     </div> -->
@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       party: Object,
-      tabs: ["Landing", "Header", "Party", "Members",],
-      selected: "Landing"
+      tabs: ["Party", "Members",],
+      selected: "Party"
     };
   },
   mounted() {
