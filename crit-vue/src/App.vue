@@ -5,13 +5,14 @@
       <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lato|Macondo+Swash+Caps&display=swap" rel="stylesheet">
       <title>Critical Reactions</title>
     </head>
-    <div>
+    <div id="app">
       <Header :party="party"/>
-      <button v-for="tab in tabs" :key="tab" @click="selected = tab;">
+      <router-view class="container-lg" :party="party" />
+      <!-- <button v-for="tab in tabs" :key="tab" @click="selected = tab;">
         {{ tab }}
       </button>
 
-      <component :party="party" :is="selected"></component>
+      <component :party="party" :is="selected"></component> -->
     </div>
     <!-- <div  >
 
@@ -24,25 +25,17 @@
 </template>
 
 <script>
-import Landing from './components/Landing.vue'
 import Header from './components/Header.vue'
-import Party from './components/Party.vue'
-import Members from './components/Members.vue'
 
 
 export default {
   name: 'App',
   components: {
-    Landing,
     Header,
-    Party,
-    Members
   },
   data() {
     return {
       party: Object,
-      tabs: ["Party", "Members",],
-      selected: "Party"
     };
   },
   mounted() {
@@ -61,7 +54,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$primary: seagreen;
+$secondary: darkgoldenrod;
+$dark: #2c3e50;
+$card-color: $dark;
+
+$body-bg: lighten($dark, 70%);
+$link-hover-color: lighten($primary, 15%);
+$card-bg: transparentize($dark, .7);
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+</style>
 
 /* 
 font-family: 'Berkshire Swash', cursive;
@@ -69,12 +74,12 @@ font-family: 'Macondo Swash Caps', cursive;
 font-family: 'Lato', sans-serif; 
 */
 
-body{
+/* body{
   margin:0;
 }
 #app {
   font-family: 'Lato', sans-serif; 
   text-align: center;
   color: #2c3e50;
-}
-</style>
+} */
+
