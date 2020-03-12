@@ -1,4 +1,4 @@
-# Critical Reactions!
+<span style="color:red"> # Critical Reactions! </span>
 ### The ultimate resource for Faerun's best known adventuring party, Critical Reactions!
 A marketing site for my DnD Party, Critical Reactions!
 
@@ -13,7 +13,7 @@ The plan with this is to make a Django and Vue.js fullstack application. The bac
 
 This is built using Django and DjangoREST hooked up to Vue.js on the front end. The styling utilizes BootstrapVue and Sass. This is my first time using Bootstrap. I try not to use libraries too much in this "learning" stage of my career change, as I like to try and build things from scratch when possible to understand how they work. I've been interested in Sass, and once I saw how Bootstrap and Sass worked together, it blew my mind! Also, the built-in responsivness is SOOO nice. 
 
-*All of the flavor text on the site has been compiled with the collaboration of fellow player, Marika (Aella Picazo, Ranger). Please be patient as we work on this hobby. This will directly affect the completion of the Testimonials component. 
+*All of the flavor text on the site has been compiled with the collaboration of fellow player, Marika (Aella Picazo, Ranger). Please be patient as we work on this hobby. This will directly affect the completion of the Testimonials component. *
 
 
 ## Future Features of the Project
