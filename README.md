@@ -1,4 +1,4 @@
-<span style="color:red"> # Critical Reactions! </span>
+# Critical Reactions!
 ### The ultimate resource for Faerun's best known adventuring party, Critical Reactions!
 A marketing site for my DnD Party.
 
@@ -18,11 +18,11 @@ This is built using Django and DjangoREST hooked up to Vue.js on the front end. 
 
 ## Future Features of the Project
 
-  -Add a blog section for the party's bard to share lavish tales from the road. 
+  **- Add a blog section for the party's bard to share lavish tales from the road. 
   
-  -Gather testimonials from previously satified customers to boast our ability.
+  - Gather testimonials from previously satified customers to boast our ability.
 
-  -Provide an inquiry form so that prospective citizens in need can sumbit help requests at their convenience that the party can check from anywhere and follow-up with info on when they will be available to help.  
+  - Provide an inquiry form so that prospective citizens in need can sumbit help requests at their convenience that the party can check from anywhere and follow-up with info on when they will be available to help.  **
 
 ***
 
