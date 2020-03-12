@@ -88,6 +88,6 @@ On success, the terminal will then tell you the url for your server. It is commo
 ```console
 App running at:
   - Local:   http://localhost:8080/
-  - Network: http://10.0.0.225:8080/
+  - Network: http://<your-IP>:8080/
 ```
 
