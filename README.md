@@ -1,6 +1,6 @@
 <span style="color:red"> # Critical Reactions! </span>
 ### The ultimate resource for Faerun's best known adventuring party, Critical Reactions!
-A marketing site for my DnD Party, Critical Reactions!
+A marketing site for my DnD Party.
 
 
 The inspiration is somewhere close to what a Real Estate or Insurance agent may use to sell customers on their service. Get to know us, read about our previous trials, customer testimonials, and more! The internet is the next big magical phenomenon to come to Faerun!
