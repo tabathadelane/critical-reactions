@@ -11,7 +11,7 @@ The inspiration is somewhere close to what a Real Estate or Insurance agent may 
 
 
 
-This is built using Django and DjangoREST hooked up to Vue.js on the front end. The styling utilizes BootstrapVue and Sass. This is my first time using Bootstrap. I try not to use libraries too much in this "learning" stage of my career change, as I like to try and build things from scratch when possible to understand how they work. I've been interested in Sass, and once I saw how Bootstrap and Sass worked together, it blew my mind! Also, the built-in responsivness is SOOO nice. 
+This is built using Django and DjangoREST hooked up to Vue.js on the front end. The styling utilizes BootstrapVue and Sass. This is my first time using Bootstrap. I try not to use libraries too much in this "learning" stage of my career change, as I like to try and build things from scratch when possible to understand how they work. I've been interested in Sass, and once I saw how Bootstrap and Sass worked together, it blew my mind! Also, the built-in responsiveness is SOOO nice. 
 
 So far the backend is simple and maybe doesn't make sense to exist. I love Django and DjangoREST, and also, I kind of thought it would be a cool idea to have a skeleton front-end that could be hooked up to any database of a crew. All of the party information is dynamically filled in the Vue templates from the RestAPI. I even have a database column for D&D class themes (colors), which you will see on the "Members" tab. I have the templates also plug into in-line stlyes in a for loop for each member of the party. All of the colors come from the official D&D Beyond hexcodes for each class. NEAT! Also, I would like to add a blog and a service inquiry form to the backend later. 
 
@@ -22,9 +22,9 @@ So far the backend is simple and maybe doesn't make sense to exist. I love Djang
 
   - Add a blog section for the party's bard to share lavish tales from the road. 
   
-  - Gather testimonials from previously satified customers to boast our ability.
+  - Gather testimonials from previously satisfied customers to boast our abilities.
 
-  - Provide an inquiry form so that prospective citizens in need can sumbit help requests at their convenience that the party can check from anywhere and follow-up with info on when they will be available to help.  
+  - Provide an inquiry form so that prospective citizens in need can sumbit help requests at their convenience that the party can check from anywhere
 
 ***
 
