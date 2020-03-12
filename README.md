@@ -68,10 +68,12 @@ Now you will need two seperate terminals to run each chunk of the project. Make 
 
 ###  Backend Server
 
-If you are not serving on localhost:8000, the AJAX urls will fail. 
+You must be in the pipenv environment, or the server will throw dependency errors.
+
+Also, if you are not serving on localhost:8000, the AJAX urls will fail. 
+
 ```console
 ~/critical-reactions
-
 $ python manage.py runserver localhost:8000
 ```
 
@@ -81,7 +83,7 @@ $ python manage.py runserver localhost:8000
 ~/critical-reactions/crit-vue
 $ yarn serve
 ```
-It will then tell you the url for your browser. It is commonly http://localhost:8080/
+On success, the terminal will then tell you the url for your server. It is commonly http://localhost:8080/
 
 ```console
 App running at:
