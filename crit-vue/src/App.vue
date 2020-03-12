@@ -60,8 +60,9 @@ $secondary: darkgoldenrod;
 $dark: #2c3e50;
 $card-color: $dark;
 
-$body-bg: lighten($dark, 70%);
-$link-hover-color: lighten($primary, 15%);
+$body-bg: lighten($dark, 60%);
+$link-hover-color: lighten($primary, 20%);
+$link-hover-decoration: none;
 $card-bg: transparentize($dark, .7);
 
 @import 'node_modules/bootstrap/scss/bootstrap';

@@ -1,8 +1,12 @@
 <template>
   <div class="members">
-    <h1 class="m-4" style="font-family: 'Berkshire Swash', cursive;"> Meet {{party.title}}: </h1>
+    <b-card  no-body bg-variant="light" >
+      <template v-slot:header>
+        <h1 class="m-4 text-center" style="font-family: 'Berkshire Swash', cursive;"> Get to know {{party.title}}: </h1>
+      </template>
+    </b-card>
     <div  class="m" v-for="m in party.m" :key="m.pk" >
-      <b-card  bg-variant="light" class="m-box" :style="'border-color: '+m.theme+'; color: '+m.theme+';' ">
+      <b-card  bg-variant="light" class="mt-2 m-box" :style="'border-color: '+m.theme+'; color: '+m.theme+';' ">
         <template v-slot:header>
           <h2 class="mb-0"><i :class="'fad ' + m.icon" :style="'color: '+m.theme+';'"></i> {{m.name}}</h2>
         </template>
@@ -49,14 +53,13 @@ export default {
 } */
 
 
-.m {
+/* .m {
   width: 80%;
   margin: auto;
-}
+} */
 .m-box {
   border: 2px solid;
   border-radius: 5px;
-  margin: 10px;
   
 } 
 </style>
