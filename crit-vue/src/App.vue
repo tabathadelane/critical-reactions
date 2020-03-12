@@ -45,7 +45,10 @@ export default {
   methods: {
     async getMembers() {
       // try {
-      const response = await fetch("http://127.0.0.1:8000/api/party/1/");
+      const response = await fetch("http://127.0.0.1/api/party/1/");
+      // run    python manage.py runserver 80   to serve over network
+      // const response = await fetch("http://127.0.0.1:8000/api/party/1/");
+      // const response = await fetch("http://10.0.0.225:8000/api/party/1/");
       const data = await response.json();
       this.party = data;
       // } catch (error) {}
@@ -54,7 +57,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss"> 
 $primary: seagreen;
 $secondary: darkgoldenrod;
 $dark: #2c3e50;
