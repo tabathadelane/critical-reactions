@@ -15,7 +15,7 @@ This is built using Django and DjangoREST hooked up to Vue.js on the front end. 
 
 So far the backend is simple and maybe doesn't make sense to exist. I love Django and DjangoREST, and also, I kind of thought it would be a cool idea to have a skeleton front-end that could be hooked up to any database of a crew. All of the party information is dynamically filled in the Vue templates from the RestAPI. I even have a database column for D&D class themes (colors), which you will see on the "Members" tab. I have the templates also plug into in-line stlyes in a for loop for each member of the party. All of the colors come from the official D&D Beyond hexcodes for each class. NEAT! Also, I would like to add a blog and a service inquiry form to the backend later. 
 
-*All of the flavor text on the site has been compiled with the collaboration of fellow player, Marika (Aella Picazo, Ranger). Please be patient as we work on this hobby. This will directly affect the completion of the Testimonials component. *
+*All of the flavor text on the site has been compiled with the collaboration of fellow player, Marika (Aella Picazo, Ranger). Please be patient as we work on this hobby. This will directly affect the completion of the Testimonials component.*
 
 
 ## Future Features of the Project
