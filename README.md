@@ -3,7 +3,7 @@ A marketing site for my DnD Party, Critical Reactions!
 
 ### Trversal.com v.1
 
-![Critical Reactions site demo with Bootstrap and Vue.js](crit-vue/src/assets/preview-gif.gif | width=500)
+![Critical Reactions site demo with Bootstrap and Vue.js](crit-vue/src/assets/preview-gif.gif)
 
 The inspiration is somewhere close to what a Real Estate or Insurance agent may use to sell customers on their service. Get to know us, read about our previous trials, customer testimonials, and more! The internet is the next big magical phenomenon to come to Faerun!
 
