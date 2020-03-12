@@ -1,4 +1,5 @@
-# The ultimate resource for Faerun's best known adventuring party, Critical Reactions!
+# Critical Reactions!
+### The ultimate resource for Faerun's best known adventuring party, Critical Reactions!
 A marketing site for my DnD Party, Critical Reactions!
 
 
