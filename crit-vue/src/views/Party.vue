@@ -10,7 +10,7 @@
     <hr class="my-4">
     <p>{{party.why}}</p>
     <div class="justify-content-end">
-      <b-button variant="dark" class="m-2" ><router-link to="/members"><h4>Meet the party</h4></router-link></b-button>
+      <b-button variant="dark" class="m-2" ><router-link to="/members"><h4>Member Bios</h4></router-link></b-button>
     </div>
   </b-jumbotron>
 </template>
